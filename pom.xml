@@ -7,6 +7,15 @@
     <groupId>com.rsoi</groupId>
     <artifactId>rsoilab1</artifactId>
     <version>1.0</version>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>3.0.2</version>
+            </plugin>
+        </plugins>
+    </build>
     <dependencies>
     <dependency>
         <groupId>org.springframework.boot</groupId>
