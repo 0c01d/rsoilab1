@@ -1,18 +1,14 @@
 language: java
 jdk:
 - oraclejdk8
-
 install:
 - mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
-
 deploy:
   provider: heroku
-  api_key: 70c228a3-b82f-4dcf-98dc-40c53d253240
+  api_key:
+    secure: gcqX0nYywD1r3UtA3HLZFCdLQqYJ/beobg0+MUAswadpRxySSzoW9JVSrSuIoULBHYdfmbnooNTVvArqXM+QybsmS0lQ2G5MjIbK2/ykHYQb3eoyfclVXNHt1y4hBL9pYzqsMcZooIg5PtV4AvXcFVgg2k275HSAVN0KwmSpGWkSYrctttEwsWUb6+zivbWcs/Kw2pE9wqKsO4+1jkJmPT68AEu+JYLp704w2AENarACLBvej0mm0h1lA+Q2CSommN4EL7n7Qf5q9h5CetNdhT19uhQG9sDm/cSND5Xhfd+g8bxiMpY2ETbjhxlm2aHNDCItZareh8DYK78Q619pVqlRcorUWC/AP2RDHX/kQe0Jh/1vgC1Ny3S2CoUPdHzOVYbKfM/72O33DPZ/F3LrwWBRIPa1G2kxN/LRwSWLqHP3mOl7BUY2NQX82Bo99sQyStqkaWc7SSil4mBoJWpc80uiPl49RVjj8LP+HpupjeqfW9qy5q24A5h/znVteHoBHnLon/M+ak2uf/VfaPX00hMEDxRG2AQo5YVzMa3W/QD8c3RgXxyR/ui4mjjXpAHicUK8C/u4LRXpOuECd0oq+bCEfXYhdxnwEm2KSouSOnLRaf2cby9bD1hSP96ok2CxInOGNEMqgG9Hsgb92P/Ba5+NSOpqHu2mj3N1C5JToOQ=
   app: rsoilab1
   on:
     repo: 0co1d/rsoilab1
 notifications:
   email: false
-
-
-
