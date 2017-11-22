@@ -7,8 +7,7 @@ install:
 
 deploy:
   provider: heroku
-  api_key:
-    secure: Ct9gJizF/OodZe3gwaeJbZoJRLV2DMkVKXYPXCWWwRxB/KnA+iVVywvwm74gSrlJ9xDns8hCGAFOkTdR9bE68mjt9BedxqNWz0594WbMcZ8QXfOj62rFtHcULFyUP8AUAKd4FGmWV03A9l1Xj0B5Ki4JWVJSe46YnSTrcbS7cQ+enABcW2+zlEn/9U4lUc4STQzw+5QSJa7q3qAKASIRDPp2hbnnb516PRGVu4IQNm3Chb4vMnt+auU1hNMAzeNM/N2AfUkfoBsqvBDwNgCI76/8EfY78S0VUp23/R0dZh9HULSN7+PSjmuYbfseaIAYjCT722shNrVWdpCqYqEdh+TciLQVDV0CD/rSJwHtVvx2RGeNBGYZTL346GfztFbV0aVJ9AEoeubmQ0/i0rXkLSTN0ny9JfdeJgk93OTJlTxbC7/fgM6t3TMWQ0jKkMiO/68Vmo6UFIf6EJhVxvJxTB30ofM4BIIoAtf6Xn5Ne3osan0Pk/mAb82TxcIsTD/DsSfuTNt2vvYAUCaHrUwnOdeIS1KXGP/kvudEHaKFcb5ZdId9hSNsNxVHwTX/OCR06ThVmxoTrrqMpOtrGmJ+rDoLmAYuMhb5r5xVJY3DaLOGF988gVph0bI48FUNXxfkaDmZqEGtZ1ik/ffTkwRcWMkglDqaIxLWGUnQjL/3+Cw=
+  api_key: 70c228a3-b82f-4dcf-98dc-40c53d253240
   app: rsoilab1
   on:
     repo: 0co1d/rsoilab1
