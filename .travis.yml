@@ -1,3 +1,10 @@
+language: java
+jdk:
+- oraclejdk8
+
+install:
+- mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
+
 deploy:
   provider: heroku
   api_key:
@@ -5,3 +12,8 @@ deploy:
   app: rsoilab1
   on:
     repo: 0co1d/rsoilab1
+notifications:
+  email: false
+
+
+
