@@ -1,28 +1,20 @@
 package rsoilab;
 
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
-import static org.apache.catalina.util.MIME2Java.reverse;
-
-@RestController
+@org.springframework.stereotype.Controller
 public class Controller {
 
- public String hello = "Hello World!";
+    public String rsoi = "RSOI First Lab!";
 
     @RequestMapping(value = "/", method = RequestMethod.GET)
     public String index() {
-        return hello;
+        return rsoi;
     }
 
     @RequestMapping(value = "/reverse/{text}", method = RequestMethod.GET)
     public String reverseRequest(@PathVariable("text") String text) {
-        		return reverse(text);
-        	}
-
-    String reverse(String text) {
-        	return new StringBuilder(text).reverse().toString();
-        	}
+        return new StringBuilder(text).reverse().toString();
+    }
 }
+

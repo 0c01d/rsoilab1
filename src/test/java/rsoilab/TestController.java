@@ -10,13 +10,12 @@ public class TestController {
     Controller controller = new Controller();
 
     @Test
-    void getHello() {
-        assertEquals("Hello World!", controller.hello);
+    void getText() {
+        assertEquals("RSOI First Lab!", controller.rsoi);
     }
 
     @Test
-    void reverseTest() {
-        assertEquals(controller.reverse("abc"), "cba");
-        assertEquals(controller.reverse("Hello, world!"), "!dlrow ,olleH");
+    void reverse() {
+        assertEquals(controller.reverseRequest("RSOI"), "IOSR");
     }
 }
