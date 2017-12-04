@@ -3,6 +3,7 @@ package rsoilab;
 import org.springframework.web.bind.annotation.*;
 
 @org.springframework.stereotype.Controller
+@RequestMapping("/")
 public class Controller {
 
     public String rsoi = "RSOI First Lab!";
