@@ -7,10 +7,11 @@ import org.springframework.web.bind.annotation.*;
 public class Controller {
 
     public String rsoi = "RSOI First Lab!";
+    private String comment =  "\n \n \n Add /reverse/{text} in url for reverse text.";
 
     @RequestMapping(value = "/", method = RequestMethod.GET)
     public String index() {
-        return rsoi;
+        return rsoi + comment;
     }
 
     @RequestMapping(value = "/reverse/{text}", method = RequestMethod.GET)
